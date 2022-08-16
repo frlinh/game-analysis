@@ -1,7 +1,5 @@
 # game-analysis
 
-# An analysis of....
-
 ## Project Overview
 Performed data analysis on ....
 
