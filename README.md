@@ -18,7 +18,7 @@ We are a group of individuals who are interested in gaming data.
 
 **Communication Portal:** Slack
 
-**Zoom Meetings:** Monday from 6:30 PM to 9 pm, Wednesday from 6:30 PM to 9 PM, and Saturday from 10 AM to 12 PM
+**Zoom Meetings:** Monday from 6:30 PM to 9 PM, Wednesday from 6:30 PM to 9 PM, and Saturday from 10 AM to 12 PM
 
 ## Resources
 **Data Source:** [Riot Games](https://developer.riotgames.com/apis), [Champion JSON](http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json)
