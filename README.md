@@ -7,7 +7,7 @@ We will use the dataset provided by Kaggle and Riot Games to predict pick/ban ra
 
 **Reason:**
 
-We are a group of individuals interested in gaming data.
+We are a group of individuals who are interested in gaming data.
 
 **Questions:**
 
