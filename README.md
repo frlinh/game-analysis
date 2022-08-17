@@ -31,7 +31,7 @@ We are a group of individuals who are interested in gaming data.
 
 - **Machining Learning:** Imbalanced-learn, Scikit-learn, Tensorflow
 
-- **Data Visualization:** JavaScript, CSS, Flask, Tableau, HTML
+- **Data Visualization:** JavaScript, Plotly, CSS, Flask, Tableau, HTML
 
 ## Database
 
