@@ -1,17 +1,23 @@
-# game-analysis
+# Champions Mastery Analysis
 
 ## Project Overview
 **Topic:**
 
-We will use the dataset provided by Kaggle and Riot Games to predict pick/ban rates and win rates over time for Master rank and above.
+We will use the dataset provided by Kaggle and Riot Games to determine the duration to master a Champion.
 
 **Reason:**
 
-We are a group of individuals who are interested in gaming data.
+We are a group of individuals who are interested in gaming data and want to help beginners choose their first Champion.
 
 **Questions:**
 
-**Goals:**
+- Are the newer Champions harder to learn than the original Champions?
+
+- How many matches would it take to master a Champion?
+
+- Which Champions would be easiest to learn in each role?
+
+- Which Champions have similar characteristics?
 
 ## Communication Protocols
 **Team Players:** Becky Nguyen, Kevin Zhang, Linh Ha, Peter Villalpando, Stella Kim
