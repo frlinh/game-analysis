@@ -1,3 +1,5 @@
+![Banner](https://github.com/frlinh/game-analysis/blob/5550b15dd5283e082a38f45530bc287d707aa76a/static/images/leagueOfLegendsBanner.png)
+
 # Champions Mastery Analysis
 
 ## Project Overview
