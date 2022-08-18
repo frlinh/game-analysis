@@ -5,7 +5,7 @@
 ## Project Overview
 **Topic:**
 
-We will use the dataset provided by Kaggle and Riot Games to determine the duration to master a Champion.
+We will use the dataset provided by Kaggle and Riot Games to determine the duration and learning curve to master each Champion.
 
 **Reason:**
 
