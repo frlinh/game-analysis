@@ -37,7 +37,7 @@ We are a group of individuals who are interested in gaming data and want to help
 
 - **Database:** PostgreSQL, Amazon Web Services (AWS)
 
-- **Analyzing Data:** Google Colab, Pandas
+- **Analyzing Data:** Jupyter, Pandas
 
 - **Machining Learning:** Imbalanced-learn, Scikit-learn, Tensorflow
 
