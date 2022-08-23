@@ -30,7 +30,7 @@ We are a group of individuals who are interested in gaming data and want to help
 
 ## Resources
 **Data Source:** 
-- [Riot Games League-V4](https://developer.riotgames.com/apis) - North America, Diamond Tier Division I to IV, Ranked Solo 5x5 
+- [Riot Games League-V4](https://developer.riotgames.com/apis) - North American, Diamond Tier Division I to IV, Ranked Solo 5x5 
 - [Champion JSON](http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json) - Champion Info and Stats
 
 **Software:**
