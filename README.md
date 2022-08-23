@@ -1,9 +1,11 @@
+![Banner](https://github.com/frlinh/game-analysis/blob/5550b15dd5283e082a38f45530bc287d707aa76a/static/images/leagueOfLegendsBanner.png)
+
 # Champions Mastery Analysis
 
 ## Project Overview
 **Topic:**
 
-We will use the dataset provided by Kaggle and Riot Games to determine the duration to master a Champion.
+We will use the dataset provided by Kaggle and Riot Games to determine the duration and learning curve to master each Champion.
 
 **Reason:**
 
@@ -27,7 +29,9 @@ We are a group of individuals who are interested in gaming data and want to help
 **Zoom Meetings:** Monday from 6:30 PM to 9 PM, Wednesday from 6:30 PM to 9 PM, and Saturday from 10 AM to 12 PM
 
 ## Resources
-**Data Source:** [Riot Games](https://developer.riotgames.com/apis), [Champion JSON](http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json)
+**Data Source:** 
+- [Riot Games League-V4](https://developer.riotgames.com/apis) - North America, Diamond Tier Division I to IV, Ranked Solo 5x5 
+- [Champion JSON](http://ddragon.leagueoflegends.com/cdn/12.15.1/data/en_US/champion.json) - Champion Info and Stats
 
 **Software:**
 
