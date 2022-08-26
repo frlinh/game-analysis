@@ -55,7 +55,7 @@ function buildMetadata(item) {
         // Object.entries(result).forEach(([key, value]) => {
         // PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
         // });
-        Object.entries(result).search(([key, value]) => {
+        Object.entries(result).forEach(([key, value]) => {
         PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
         });
     });

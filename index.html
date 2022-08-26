@@ -9,17 +9,40 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body style ="background-color: #141414">
+<body style = "background-color: #070707">
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1><b>Champions Dashboard</b></h1>
-        <p>Use the interactive charts below to explore Champions info</p>
+  <div class="container p-3 my-3 bg-dark text-white">
+    <div class="p-3 mb-2 bg-dark text-white">
+      <div class="col-md-12 jumbotron text-center" style="background-color: #070707">
+        <h1 style = "color: #602c85"><b>CHAMPIONS DASHBOARD</b></h1>
+        <p style = "color: #602c85">Use the interactive charts below to explore your Champion</p>
+        <img src="https://raw.githubusercontent.com/frlinh/game-analysis/main/static/images/Emblem_Diamond.png" style="width:300px;height:400px"></a>
+
+      </div>
+    </div> 
+  
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="well">
+        <h5>INSERT CHART HERE</h5>
       </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <div class="well">
+        <h5>INSERT CHART HERE</h5>
+      </div>
+    </div>
+  </div>
+  
+  <button type="button" class="btn btn-lg btn-grey" data-toggle="want to see more?">Click to Tableau</button>
+  
+  <br></br>
+
     <div class="row">
-      <div class="col-md-2">
+      <div class="col-md-3">
         <div class="well">
           <h5>Champion Name:</h5>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
