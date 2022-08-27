@@ -35,28 +35,39 @@ function optionChanged(newChampion) {
     buildMetadata(newChampion);
 }
 
+
 // Champions Info Panel //
 function buildMetadata(item) {
     d3.json(url).then((data) => {
-        var item = (data.data);
-        for (let item in championInfo)
-        // Filter SEARCH the data for the object with the desired champion name
-        var resultArray = item.search(itemObj => itemObj.id == item);
-        var result = resultArray[0];
-        // Use d3 to select the panel with champion info
-        var PANEL = d3.select("#championInfo");
-
-        // Use `.html("") to clear any existing metadata
-        PANEL.html("");
-
-        // Use `Object.entries` to add each key and value pair to the panel
-        // Hint: Inside the loop, you will need to use d3 to append new
-        // tags for each key-value in the metadata. // there's no key value
-        // Object.entries(result).forEach(([key, value]) => {
-        // PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
-        // });
-        Object.entries(result).forEach(([key, value]) => {
-        PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
-        });
-    });
+        var championName = (data.data);
+        for (let item in championName)
+            for (let x in item.info)
+            console.log(x)
+    })
 }
+
+// // Champions Info Panel //
+// function buildMetadata(item) {
+//     d3.json(url).then((data) => {
+//         var item = (data.data);
+//         for (let item in championInfo)
+//         // Filter SEARCH the data for the object with the desired champion name
+//         var resultArray = item.search(itemObj => itemObj.id == item);
+//         var result = resultArray[0];
+//         // Use d3 to select the panel with champion info
+//         var PANEL = d3.select("#championInfo");
+
+//         // Use `.html("") to clear any existing metadata
+//         PANEL.html("");
+
+//         // Use `Object.entries` to add each key and value pair to the panel
+//         // Hint: Inside the loop, you will need to use d3 to append new
+//         // tags for each key-value in the metadata. // there's no key value
+//         // Object.entries(result).forEach(([key, value]) => {
+//         // PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+//         // });
+//         Object.entries(result).forEach(([key, value]) => {
+//         PANEL.append("h6").text(`${key.toUpperCase()}: ${value}`);
+//         });
+//     });
+// }
