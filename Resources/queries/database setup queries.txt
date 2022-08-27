@@ -1,0 +1,35 @@
+DROP TABLE IF EXISTS champions 
+CREATE TABLE champions (
+	id VARCHAR NOT NULL,
+	key INT NOT NULL,
+	attack INT NOT NULL,
+	defense INT NOT NULL,
+	magic INT NOT NULL,
+	difficulty INT NOT NULL,
+	tags TEXT NOT NULL,
+	hp FLOAT NOT NULL,
+	hpperlevel FLOAT NOT NULL,
+	mp FLOAT NOT NULL,
+	mpperlevel FLOAT NOT NULL,
+	armor FLOAT NOT NULL,
+	armorperlevel FLOAT NOT NULL,
+	spellblock FLOAT NOT NULL,
+	spellblockperlevel FLOAT NOT NULL,
+	attackrange FLOAT NOT NULL,
+	hpregen FLOAT NOT NULL,
+	hpregenperlevel FLOAT NOT NULL,
+	mpregen FLOAT NOT NULL,
+	mpregenperlevel FLOAT NOT NULL,
+	crit FLOAT NOT NULL,
+	critperlevel FLOAT NOT NULL,
+	attackdamage FLOAT NOT NULL,
+	attackdamageperlevel FLOAT NOT NULL,
+	attackspeedperlevel FLOAT NOT NULL,
+	attackspeed FLOAT NOT NULL,
+	
+	
+	PRIMARY KEY (id)
+)
+
+SELECT *
+FROM champions
