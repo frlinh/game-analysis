@@ -44,6 +44,8 @@ We are a group of individuals who are interested in gaming data and want to help
 - **Data Visualization:** JavaScript, Plotly, CSS, Flask, Tableau, HTML
 
 ## Database
+- The Data Sets were pulled using APi keys from the RIOT Web site
+- Cleaned and filtered using Python, Jupyter notebook, Google collab
 
 ## Data Analysis
 
