@@ -13,7 +13,7 @@
 ## Champion Mastery and Learning Curve
 
 ### Overview
-LoL is one of the most popular multi-player games but is still widely notorious for not being noob-friendly, in part due to its many game mechanics and its ever-expanding roster of over 140 playable Champions.
+LoL is one of the most popular multi-player games but is still widely notorious for not being noob-friendly, in part due to its many game mechanics and its ever-expanding roster of over 150 playable Champions.
 
 ### Purpose
 The purpose of this project is to create an easy-to-read and informative dashboard that allows a player to select any champion and see advanced stats for that champion, including learning curve and predicted mastery time. 
@@ -72,6 +72,7 @@ Our database joins multiple sources of summoner data and other relevant gameplay
 - **League:** Diamond I and higher 
 
 ### Schema
+_ERD Version 1_
 <p align="center"><img src="https://user-images.githubusercontent.com/31219195/187050868-c3c9bb3c-01e7-4017-89e1-950e2a7f6100.png" /></p>
 
 - The ```champions``` table contains all the built-in Champion details and attributes.
