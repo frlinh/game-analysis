@@ -89,6 +89,7 @@ The database for our project lives in pgAdmin. The tables are imported from the 
 
 ## Machining Learning
 
+- Basic Neural Network
 - Deep Learning Model
 - Random Forest
 - Deep Learning
