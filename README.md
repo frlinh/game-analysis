@@ -81,7 +81,11 @@ _ERD Version 1_
 - The ```total-champion-mastery-score``` is a two-column table that contains the Summoner's encrypted summonerID and total Mastery Score
 - The ```master-league-ranked-5x5```, ```diamond-league-ranked5x5```, ```grandmaster-league-ranked5x5```, and ```challenger-league-ranked5x5``` tables contain summoner information for all summoners in its respective league
 
-_Data cleaned and filtered using Python, Jupyter notebook, and Google Colab
+![pgadmin_setup](https://user-images.githubusercontent.com/31219195/187055283-5b187721-3758-43b8-87a8-b790b7f1d1fe.png)
+
+The database for our project lives in pgAdmin. The tables mirror the structure mocked up in the ERD and have been populated with data from the .csv raw data that was cleaned up beforehand using Python in a Jupyter notebook. Each table was queried to confirm that data was properly added. The Data Output window in the bottom of pgAdmin displays the results of the highlighted query.
+
+
 ERD created and exported from [Quick DBD](http://quickdatabasediagrams.com)_
 
 ## Data Analysis
