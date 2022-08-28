@@ -55,6 +55,21 @@ CREATE TABLE "master-league-ranked-5x5" (
      )
 );
 
+CREATE TABLE "challenger-league-ranked-5x5" (
+    "summonerID" varchar   NOT NULL,
+    "summonerName" varchar   NOT NULL,
+    "leaguePoints" int   NOT NULL,
+    "rank" varchar   NOT NULL,
+    "wins" int   NOT NULL,
+    "losses" int   NOT NULL,
+    "veteran" boolean   NOT NULL,
+    "inactive" boolean   NOT NULL,
+    "freshBlood" boolean   NOT NULL,
+    CONSTRAINT "pk_challenger-league-ranked-5x5" PRIMARY KEY (
+        "summonerID"
+     )
+);
+
 CREATE TABLE "diamond-league-ranked5x5" (
     "summonerId" varchar   NOT NULL,
     "leagueId" varchar   NOT NULL,
@@ -72,6 +87,8 @@ CREATE TABLE "diamond-league-ranked5x5" (
         "summonerId"
      )
 );
+
+
 
 CREATE TABLE "champions" (
     "id" varchar   NOT NULL,
@@ -113,22 +130,3 @@ CREATE TABLE "summoners" (
         "summonerId"
      )
 );
-
-ALTER TABLE "champion-mastery" ADD CONSTRAINT "fk_champion-mastery_summonerId" FOREIGN KEY("summonerId")
-REFERENCES "summoners" ("summonerId");
-
-ALTER TABLE "champion-mastery" ADD CONSTRAINT "fk_champion-mastery_championId" FOREIGN KEY("championId")
-REFERENCES "champions" ("id");
-
-ALTER TABLE "total-champion-mastery-score" ADD CONSTRAINT "fk_total-champion-mastery-score_summonerID" FOREIGN KEY("summonerID")
-REFERENCES "summoners" ("summonerId");
-
-ALTER TABLE "grandmaster-league-ranked5x5" ADD CONSTRAINT "fk_grandmaster-league-ranked5x5_summonerID" FOREIGN KEY("summonerID")
-REFERENCES "summoners" ("summonerId");
-
-ALTER TABLE "master-league-ranked-5x5" ADD CONSTRAINT "fk_master-league-ranked-5x5_summonerID" FOREIGN KEY("summonerID")
-REFERENCES "summoners" ("summonerId");
-
-ALTER TABLE "diamond-league-ranked5x5" ADD CONSTRAINT "fk_diamond-league-ranked5x5_summonerId" FOREIGN KEY("summonerId")
-REFERENCES "summoners" ("summonerId");
-
