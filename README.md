@@ -1,8 +1,10 @@
 <p align="center">
-  <img src="https://github.com/frlinh/game-analysis/blob/5550b15dd5283e082a38f45530bc287d707aa76a/static/images/leagueOfLegendsBanner.png" />
+  <img src="https://github.com/frlinh/game-analysis/blob/fdc8454a27b0f7e3e6a4803bcdb4b287c3759457/static/images/llbanner.png" />
 </p>
 
-# League of Legends Champion Mastery Analysis
+# <p align="center"> League of Legends <br> Champion Mastery Analysis
+</p>
+
 <figure>
   <p align="center"><img src="https://user-images.githubusercontent.com/31219195/187048890-b2bcf629-4aa1-4830-8005-8f08c6f5cd12.png" height="100px" />
     <img src="https://user-images.githubusercontent.com/31219195/187048891-d7444dbf-bc26-4585-9351-1659e6c0a7fe.png" height="100px" />
@@ -92,4 +94,3 @@ The database for our project lives in pgAdmin. The tables are imported from the 
 - Basic Neural Network
 - Deep Learning Model
 - Random Forest
-- Deep Learning
