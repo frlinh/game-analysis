@@ -88,17 +88,21 @@ _ERD Version 1_
 The database for our project lives in pgAdmin. The tables are imported from the .sql ERD created in [Quick DBD](http://quickdatabasediagrams.com) and have been populated with data from the .csv raw data that was cleaned up beforehand using Python in a Jupyter notebook. Each table was queried to confirm that data was properly added. The Data Output window in the bottom of pgAdmin displays the results of the highlighted query.
 
 ## Data Analysis
--The purpose of this analysis is to find the learning curve of each individual champion. For League of champion users we are trying to find the level of mastery for each champion.
+-Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
+
 ![image](https://user-images.githubusercontent.com/100393032/187097476-fbdab2db-1fa7-4105-b3c1-a036b1afc5e5.png)
 
-Using Jupyter Notebook, Google Collab and Python, the analysis aims to create a clean data sheet from the Databases pulled. 
+Using Jupyter Notebook, Google Collab and Python, the Data analysis teams aims to create a clean data sheet from the Databases pulled. 
 -For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
 
 ![Screen Shot 2022-08-28 at 3 43 47 PM](https://user-images.githubusercontent.com/100393032/187097623-d38a9e8a-23e5-45bf-85d2-87c06217144b.png)
 
-Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly.
+Once the Database was pulled locally, cleanup begins with the dropping of columns unneccessary to the Analysis of the file. This allows the code to run cleanly and without issues. The columns that were kept were decided in the group meetings, dependent upon the purpose of the Champion mastery.
 
-API keys through the Riotgames website are updated daily, so 
+![Screen Shot 2022-08-28 at 3 47 46 PM](https://user-images.githubusercontent.com/100393032/187097713-9c51e668-249d-472d-9466-a71f711a2c6f.png)
+
+Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly.
+Once the files have been cleaned and sorted, the next step will be to proved a merging of the databases.
 
 
 We have filtered and seperated our database to reflect 
