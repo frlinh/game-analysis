@@ -86,7 +86,7 @@ _ERD Version 1_
 The database for our project lives in pgAdmin. The tables mirror the structure mocked up in the ERD and have been populated with data from the .csv raw data that was cleaned up beforehand using Python in a Jupyter notebook. Each table was queried to confirm that data was properly added. The Data Output window in the bottom of pgAdmin displays the results of the highlighted query.
 
 
-ERD created and exported from [Quick DBD](http://quickdatabasediagrams.com)_
+_ERD created and exported from [Quick DBD](http://quickdatabasediagrams.com)_
 
 ## Data Analysis
 
