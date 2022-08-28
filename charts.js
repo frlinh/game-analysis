@@ -35,7 +35,6 @@ function optionChanged(newChampion) {
     buildMetadata(newChampion);
 }
 
-
 // Champions Info Panel //
 function buildMetadata(item) {
     d3.json(url).then((data) => {

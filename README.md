@@ -90,7 +90,18 @@ The database for our project lives in pgAdmin. The tables are imported from the 
 ## Data Analysis
 
 ## Machining Learning
+For our project, we practiced using various machine learning models to test which would be the best fit. After loading in our dataset and preprocessing by removing unnecessary columns, we are able to begin with several different models. 
 
-- Basic Neural Network
-- Deep Learning Model
-- Random Forest
+### Logistic Regression
+With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current dummy model showed: 
+
+Logistic regression model accuracy: 0.400
+### Basic Neural Network
+Similar to a logistic regression, a basic neural network can predict a dependent output variable from independent input variables. After defining the basic neural network model, we compile, train, and evaluate using test data. Our current dummy model showed an accuracy rate less than our logistic regression model:
+
+Loss: -737.0263671875, Accuracy: 0.31511253118515015
+### Deep Learning Model
+With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. Once we have our dataset, we'll be able to fully test this out. 
+
+### Random Forest
+If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
