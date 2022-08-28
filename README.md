@@ -121,7 +121,7 @@ One thing we can see from this graph is the outliers of wins and losses compared
 ![image](https://user-images.githubusercontent.com/100393032/187098657-37a338ad-37f0-4609-87ab-3d3948ab1791.png)
 
 
-Now that all of the Databases have been pulled and uploaded, the next step will be to proved a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
+Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 
 
