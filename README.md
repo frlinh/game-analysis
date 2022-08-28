@@ -89,10 +89,9 @@ The database for our project lives in pgAdmin. The tables are imported from the 
 
 ## Data Analysis
 -Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
-
-![image](https://user-images.githubusercontent.com/100393032/187097476-fbdab2db-1fa7-4105-b3c1-a036b1afc5e5.png)
-
 Using Jupyter Notebook, Google Collab and Python, the Data analysis teams aims to create a clean data sheet from the Databases pulled. 
+### Note this is ANALYSIS BASED ON THE DUMMY FORM
+
 -For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
 
 ![Screen Shot 2022-08-28 at 3 43 47 PM](https://user-images.githubusercontent.com/100393032/187097623-d38a9e8a-23e5-45bf-85d2-87c06217144b.png)
@@ -102,6 +101,21 @@ Once the Database was pulled locally, cleanup begins with the dropping of column
 ![Screen Shot 2022-08-28 at 3 47 46 PM](https://user-images.githubusercontent.com/100393032/187097713-9c51e668-249d-472d-9466-a71f711a2c6f.png)
 
 Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly.
+
+![image](https://user-images.githubusercontent.com/100393032/187097994-913258a6-f9e7-4e93-a412-3f096dee96b0.png)
+Our testing initall ran an accuracy of 35% but as our model develops and improves we will be aiming for a higher goal.
+
+![image](https://user-images.githubusercontent.com/100393032/187098082-bde79dd5-d464-40fb-be88-b8d797e67998.png)
+
+By dividing the data into the four league rankings, we can see that the accuracy isn't very high, but as LoL is a "team-based strategy game" the accuracy is misleading and actually quite high considering the variables.
+
+![image](https://user-images.githubusercontent.com/100393032/187098198-da3ddd16-955c-47b8-baf8-c29a2f68bbd0.png)
+
+After running the confusion matrix, a visual understanding of the chosen variable "league rankings" displays a low prediction which helps to determine the team that moving forward with this analysais will lead to low percentages of predictibality. 
+
+![image](https://user-images.githubusercontent.com/100393032/187098431-4eeb50b8-feee-4aa4-aa30-edc0efccff32.png)
+We can see that
+
 Once the files have been cleaned and sorted, the next step will be to proved a merging of the databases.
 
 
