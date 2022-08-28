@@ -90,7 +90,7 @@ The database for our project lives in pgAdmin. The tables are imported from the 
 ## Data Analysis
 -Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
 Using Jupyter Notebook, Google Collab and Python, the Data analysis teams aims to create a clean data sheet from the Databases pulled. 
-### Note this is ANALYSIS BASED ON THE DUMMY FORM
+
 
 -For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
 
