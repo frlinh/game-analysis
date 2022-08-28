@@ -1,5 +1,10 @@
+<<<<<<< HEAD
+# Config file
+config.js
+=======
 #Config
 config.py
+>>>>>>> 327c77936138b4b3269c4bb94ed758f1405305ef
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -130,3 +135,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# files
+config.py
+/Resources/dataDragon

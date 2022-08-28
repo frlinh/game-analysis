@@ -104,4 +104,4 @@ Loss: -737.0263671875, Accuracy: 0.31511253118515015
 With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. Once we have our dataset, we'll be able to fully test this out. 
 
 ### Random Forest
-If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests. 
+If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
