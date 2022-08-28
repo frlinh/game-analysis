@@ -100,23 +100,28 @@ Once the Database was pulled locally, cleanup begins with the dropping of column
 
 ![Screen Shot 2022-08-28 at 3 47 46 PM](https://user-images.githubusercontent.com/100393032/187097713-9c51e668-249d-472d-9466-a71f711a2c6f.png)
 
-Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly.
+Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly (this includes columns with unneccassry strings, or integers not relevant to the analysis).
 
 ![image](https://user-images.githubusercontent.com/100393032/187097994-913258a6-f9e7-4e93-a412-3f096dee96b0.png)
-Our testing initall ran an accuracy of 35% but as our model develops and improves we will be aiming for a higher goal.
+
+Our testing initally ran an accuracy of 35% but as our model develops and improves we will be aiming for a higher goal.
 
 ![image](https://user-images.githubusercontent.com/100393032/187098082-bde79dd5-d464-40fb-be88-b8d797e67998.png)
 
-By dividing the data into the four league rankings, we can see that the accuracy isn't very high, but as LoL is a "team-based strategy game" the accuracy is misleading and actually quite high considering the variables.
+By dividing the data into the four league rankings, we can see that the accuracy isn't very high, but as LoL is a "team-based strategy game" the accuracy is misleading and actually quite high considering the unknown variables that come from human gamplay, time spent playing, and variety of the Champions.
 
 ![image](https://user-images.githubusercontent.com/100393032/187098198-da3ddd16-955c-47b8-baf8-c29a2f68bbd0.png)
 
-After running the confusion matrix, a visual understanding of the chosen variable "league rankings" displays a low prediction which helps to determine the team that moving forward with this analysais will lead to low percentages of predictibality. 
+After running the confusion matrix, a visual understanding of the chosen variable "league rankings" displays a low prediction which helps to determine the team that moving forward with this analysis will lead to low percentages of predictibality. A new model will likely be chosen to ensure a higher rate of accuracy. 
 
 ![image](https://user-images.githubusercontent.com/100393032/187098431-4eeb50b8-feee-4aa4-aa30-edc0efccff32.png)
-We can see that
 
-Once the files have been cleaned and sorted, the next step will be to proved a merging of the databases.
+One thing we can see from this graph is the outliers of wins and losses compared to the amount of games played. The graph shows a cluster of games around the 200 games played mark. This could be of note to the learning factor as we move forward with this project.
+
+![image](https://user-images.githubusercontent.com/100393032/187098657-37a338ad-37f0-4609-87ab-3d3948ab1791.png)
+
+
+Now that all of the Databases have been pulled and uploaded, the next step will be to proved a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 
 We have filtered and seperated our database to reflect 
