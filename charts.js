@@ -41,8 +41,8 @@ function buildMetadata(item) {
     d3.json(url).then((data) => {
         var championName = (data.data);
         for (let item in championName)
-            for (let x in item.info)
-            console.log(x)
+            for (let x in item)
+            console.log(item.x)
     })
 }
 
