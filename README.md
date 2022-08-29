@@ -2,8 +2,7 @@
   <img src="https://github.com/frlinh/game-analysis/blob/fdc8454a27b0f7e3e6a4803bcdb4b287c3759457/static/images/llbanner.png" />
 </p>
 
-# <p align="center"> League of Legends <br> Champion Mastery Analysis
-</p>
+# <p align="center"> League of Legends <br> Champion Mastery Analysis </p>
 
 <figure>
   <p align="center"><img src="https://user-images.githubusercontent.com/31219195/187048890-b2bcf629-4aa1-4830-8005-8f08c6f5cd12.png" height="100px" />
@@ -117,10 +116,7 @@ One thing we can see from this graph is the outliers of wins and losses compared
 
 ![image](https://user-images.githubusercontent.com/100393032/187098657-37a338ad-37f0-4609-87ab-3d3948ab1791.png)
 
-
 Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
-
-
 
 ## Machining Learning
 For our project, we practiced using various machine learning models to test which would be the best fit. After loading in our dataset and preprocessing by removing unnecessary columns, we are able to begin with several different models. 
