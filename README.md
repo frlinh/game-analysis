@@ -33,8 +33,6 @@ The player using this dashboard will be able to use this information to see cust
 
 - Are the newer Champions harder to learn than the original Champions?
 
-- Which Champions would be easiest to learn in each role?
-
 - Which Champions have similar characteristics?
 
 - Which Champions would I be good at based on my current champion masteries?
@@ -88,11 +86,10 @@ _ERD Version 1_
 The database for our project lives in pgAdmin. The tables are imported from the .sql ERD created in [Quick DBD](http://quickdatabasediagrams.com) and have been populated with data from the .csv raw data that was cleaned up beforehand using Python in a Jupyter notebook. Each table was queried to confirm that data was properly added. The Data Output window in the bottom of pgAdmin displays the results of the highlighted query.
 
 ## Data Analysis
--Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
+Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
 Using Jupyter Notebook, Google Collab and Python, the Data analysis teams aims to create a clean data sheet from the Databases pulled. 
 
-
--For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
+For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
 
 ![Screen Shot 2022-08-28 at 3 43 47 PM](https://user-images.githubusercontent.com/100393032/187097623-d38a9e8a-23e5-45bf-85d2-87c06217144b.png)
 
