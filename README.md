@@ -119,18 +119,25 @@ One thing we can see from this graph is the outliers of wins and losses compared
 Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 ## Machining Learning
-For our project, we practiced using various machine learning models to test which would be the best fit. After loading in our dataset and preprocessing by removing unnecessary columns, we are able to begin with several different models. 
+For our project, we practiced using various machine learning models to test which would be the best fit. We start with loading in our data from the championMasteryBeta.csv.
+<img width="936" alt="Screen Shot 2022-09-04 at 2 12 36 PM" src="https://user-images.githubusercontent.com/100896787/188298987-bf6bf7a8-4153-4edc-bbbd-d6a49e6b5d84.png">
+We then drop the other columns until our dataframe shows only the championID, championLevel, championPoints, and tokensEarned. Our models will be using the championPoints as the x-variable. 
+<img width="928" alt="Screen Shot 2022-09-04 at 2 18 47 PM" src="https://user-images.githubusercontent.com/100896787/188299004-e4895c1c-f515-4d8a-8b94-c076ca5ee110.png">
 
 ### Logistic Regression
-With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current dummy model showed: 
+With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current model shows: 
+<img width="938" alt="Screen Shot 2022-09-04 at 2 19 22 PM" src="https://user-images.githubusercontent.com/100896787/188299051-d396090c-2c2a-4c92-ae28-cd9f357cfce4.png">
 
-Logistic regression model accuracy: 0.400
+
 ### Basic Neural Network
 Similar to a logistic regression, a basic neural network can predict a dependent output variable from independent input variables. After defining the basic neural network model, we compile, train, and evaluate using test data. Our current dummy model showed an accuracy rate less than our logistic regression model:
 
-Loss: -737.0263671875, Accuracy: 0.31511253118515015
+
 ### Deep Learning Model
 With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. Once we have our dataset, we'll be able to fully test this out. 
 
 ### Random Forest
 If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
+
+## Presentation
+Here is the Google Slides version of our [presentation](https://docs.google.com/presentation/d/1F-JlsLppbihsJczyLr8Sn_S8Bs4aVmP5UtRGdgwIj4I/edit?usp=sharing).
