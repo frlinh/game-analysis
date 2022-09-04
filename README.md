@@ -2,8 +2,7 @@
   <img src="https://github.com/frlinh/game-analysis/blob/fdc8454a27b0f7e3e6a4803bcdb4b287c3759457/static/images/llbanner.png" />
 </p>
 
-# <p align="center"> League of Legends <br> Champion Mastery Analysis
-</p>
+# <p align="center"> League of Legends <br> Champion Mastery Analysis </p>
 
 <figure>
   <p align="center"><img src="https://user-images.githubusercontent.com/31219195/187048890-b2bcf629-4aa1-4830-8005-8f08c6f5cd12.png" height="100px" />
@@ -32,8 +31,6 @@ The player using this dashboard will be able to use this information to see cust
 - How "hard" is it to play [ Champion ]?
 
 - Are the newer Champions harder to learn than the original Champions?
-
-- Which Champions would be easiest to learn in each role?
 
 - Which Champions have similar characteristics?
 
@@ -88,6 +85,38 @@ _ERD Version 1_
 The database for our project lives in pgAdmin. The tables are imported from the .sql ERD created in [Quick DBD](http://quickdatabasediagrams.com) and have been populated with data from the .csv raw data that was cleaned up beforehand using Python in a Jupyter notebook. Each table was queried to confirm that data was properly added. The Data Output window in the bottom of pgAdmin displays the results of the highlighted query.
 
 ## Data Analysis
+Once the Databases are pulled from the API and Json files, Data cleanup begins in order to process the Data through the Machine learning code.
+Using Jupyter Notebook, Google Collab and Python, the Data analysis teams aims to create a clean data sheet from the Databases pulled. 
+
+For simple access, Github files were downloaded through Raw files and coverted to CVS locally.
+
+![Screen Shot 2022-08-28 at 3 43 47 PM](https://user-images.githubusercontent.com/100393032/187097623-d38a9e8a-23e5-45bf-85d2-87c06217144b.png)
+
+Once the Database was pulled locally, cleanup begins with the dropping of columns unneccessary to the Analysis of the file. This allows the code to run cleanly and without issues. The columns that were kept were decided in the group meetings, dependent upon the purpose of the Champion mastery.
+
+![Screen Shot 2022-08-28 at 3 47 46 PM](https://user-images.githubusercontent.com/100393032/187097713-9c51e668-249d-472d-9466-a71f711a2c6f.png)
+
+Columns were dropped, and testing was provided to ensure the Machine learning models would run correctly (this includes columns with strings, or integers not relevant to the analysis).
+
+![image](https://user-images.githubusercontent.com/100393032/187097994-913258a6-f9e7-4e93-a412-3f096dee96b0.png)
+
+Our testing initally ran an accuracy of 35% but as our model develops and improves we will be aiming for a higher goal.
+
+![image](https://user-images.githubusercontent.com/100393032/187098082-bde79dd5-d464-40fb-be88-b8d797e67998.png)
+
+By dividing the data into the four league rankings, we can see that the accuracy isn't very high, but as LoL is a "team-based strategy game" so the accuracy is misleading and actually quite high considering the unknown variables that come from human gamplay, time spent playing, and variety of the Champions.
+
+![image](https://user-images.githubusercontent.com/100393032/187098198-da3ddd16-955c-47b8-baf8-c29a2f68bbd0.png)
+
+After running the confusion matrix, a visual understanding of the chosen variable "League Rankings" displays a low prediction which helps to determine the team that moving forward with this analysis will lead to low percentages of predictibality. A new model will likely be chosen to ensure a higher rate of accuracy. 
+
+![image](https://user-images.githubusercontent.com/100393032/187098431-4eeb50b8-feee-4aa4-aa30-edc0efccff32.png)
+
+One thing we can see from this graph is the outliers of wins and losses compared to the amount of games played. The graph shows a cluster of games around the 200 games played mark. This could be of note to the learning factor as we move forward with this project.
+
+![image](https://user-images.githubusercontent.com/100393032/187098657-37a338ad-37f0-4609-87ab-3d3948ab1791.png)
+
+Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 ## Machining Learning
 For our project, we practiced using various machine learning models to test which would be the best fit. After loading in our dataset and preprocessing by removing unnecessary columns, we are able to begin with several different models. 
