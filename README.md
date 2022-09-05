@@ -72,7 +72,7 @@ Our database joins multiple sources of summoner data and other relevant gameplay
 
 ### Schema
 _ERD Version 1_
-<p align="center"><img src="https://user-images.githubusercontent.com/31219195/187050868-c3c9bb3c-01e7-4017-89e1-950e2a7f6100.png" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/31219195/187050868-c3c9bb3c-01e7-4017-89e1-950e2a7f6100.png" width="300" /></p>
 
 - The ```champions``` table contains all the built-in Champion details and attributes.
 - The ```summoners``` table contains a list of (encrypted) summonerIDs that were extracted from Diamond, Master, Grandmaster, and Challenger game entries using the leaguev4 API as well as external leaderboards
@@ -130,21 +130,25 @@ We then drop the other columns until our dataframe shows only the championID, ch
 ### Logistic Regression
 With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current model shows: 
 
-<img width="938" alt="Screen Shot 2022-09-04 at 2 19 22 PM" src="https://user-images.githubusercontent.com/100896787/188299051-d396090c-2c2a-4c92-ae28-cd9f357cfce4.png">
+ Logistic regression model accuracy: 0.372
 
 ### Basic Neural Network
 Similar to a logistic regression, a basic neural network can predict a dependent output variable from independent input variables. After defining the basic neural network model, we compile, train, and evaluate using test data. Our current dummy model showed an accuracy rate less than our logistic regression model:
 
-<img width="730" alt="Screen Shot 2022-09-04 at 2 20 37 PM" src="https://user-images.githubusercontent.com/100896787/188299231-3393e403-e1e1-439f-b310-c8e84379bfa6.png">
-
+ Basic Neural Network model accuracy: 0.014
 
 ### Deep Learning Model
 With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. 
 
-<img width="912" alt="Screen Shot 2022-09-04 at 2 42 11 PM" src="https://user-images.githubusercontent.com/100896787/188299262-86e99e9e-d71b-47f6-b5a6-b113bbd03c1b.png">
+ SVM model model accuracy: 0.050
 
 ### Random Forest
 If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
+
+ Random forest predictive model accuracy: 1.000
+ 
+### Conclusion
+The Random Forest is the best model to use because it had the highest accuracy score of 1.00. The other models all had an accuracy score below 0.372. 
 
 ## Presentation
 Here is the Google Slides version of our [presentation](https://docs.google.com/presentation/d/1F-JlsLppbihsJczyLr8Sn_S8Bs4aVmP5UtRGdgwIj4I/edit?usp=sharing).
