@@ -119,13 +119,9 @@ One thing we can see from this graph is the outliers of wins and losses compared
 Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 ## Machining Learning
-For our project, we practiced using various machine learning models to test which would be the best fit. We start with loading in our data from the championMasteryBeta.csv.
+For our project, we practiced using various machine learning models to test which would be the best fit. We started with loading in our data from the championPoints.csv.
 
-<img width="936" alt="Screen Shot 2022-09-04 at 2 12 36 PM" src="https://user-images.githubusercontent.com/100896787/188298987-bf6bf7a8-4153-4edc-bbbd-d6a49e6b5d84.png">
-
-We then drop the other columns until our dataframe shows only the championID, championLevel, championPoints, and tokensEarned. Our models will be using the championPoints as the x-variable. 
-
-<img width="928" alt="Screen Shot 2022-09-04 at 2 18 47 PM" src="https://user-images.githubusercontent.com/100896787/188299004-e4895c1c-f515-4d8a-8b94-c076ca5ee110.png">
+We then dropped null values and championID, total_championpoints, and summonersplaying from the dataframe.  We converted number values to integers and assigned 'difficulty' as the x-variable. 
 
 ### Logistic Regression
 With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current model shows: 
@@ -135,12 +131,12 @@ With logistic regression, we split our dataset into test and training, then scal
 ### Basic Neural Network
 Similar to a logistic regression, a basic neural network can predict a dependent output variable from independent input variables. After defining the basic neural network model, we compile, train, and evaluate using test data. Our current dummy model showed an accuracy rate less than our logistic regression model:
 
- Basic Neural Network model accuracy: 0.014
+ Basic neural network model accuracy: 0.014
 
 ### Deep Learning Model
 With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. 
 
- SVM model model accuracy: 0.050
+ SVM deep learning model accuracy: 0.050
 
 ### Random Forest
 If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
