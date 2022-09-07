@@ -72,12 +72,12 @@ CREATE TABLE "challenger-league-ranked-5x5" (
 
 CREATE TABLE "diamond-league-ranked5x5" (
     "summonerId" varchar   NOT NULL,
-    "leagueId" varchar   NOT NULL,
     "summonerName" varchar   NOT NULL,
     "queueType" varchar   NOT NULL,
-    "tier" varchar   NOT NULL,
-    "rank" varchar   NOT NULL,
+	"leagueId" varchar   NOT NULL,
     "leaguePoints" int   NOT NULL,
+	"tier" varchar,
+    "rank" varchar,
     "wins" int   NOT NULL,
     "losses" int   NOT NULL,
     "veteran" boolean   NOT NULL,
@@ -130,3 +130,14 @@ CREATE TABLE "summoners" (
         "summonerId"
      )
 );
+
+SELECT "summonerName", "leaguePoints", "rank", "wins", "losses", "inactive" FROM
+(SELECT * FROM "diamond-league-ranked5x5"  
+UNION ALL 
+SELECT * FROM "master-league-ranked5x5"
+UNION ALL
+SELECT * FROM "grandmaster-league-ranked5x5"
+UNION ALL
+SELECT * FROM "challenger-league-ranked5x5" ) X 
+GROUP BY summonerName 
+ORDER BY 1;

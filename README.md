@@ -72,7 +72,7 @@ Our database joins multiple sources of summoner data and other relevant gameplay
 
 ### Schema
 _ERD Version 1_
-<p align="center"><img src="https://user-images.githubusercontent.com/31219195/187050868-c3c9bb3c-01e7-4017-89e1-950e2a7f6100.png" /></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/31219195/187050868-c3c9bb3c-01e7-4017-89e1-950e2a7f6100.png" width="300" /></p>
 
 - The ```champions``` table contains all the built-in Champion details and attributes.
 - The ```summoners``` table contains a list of (encrypted) summonerIDs that were extracted from Diamond, Master, Grandmaster, and Challenger game entries using the leaguev4 API as well as external leaderboards
@@ -119,18 +119,32 @@ One thing we can see from this graph is the outliers of wins and losses compared
 Now that all of the Databases have been pulled and uploaded, the next step will be to provide a cleaning and merging of the databases in order to run several machine learning models and find the highest accuracy that is relevant to the outcome of Champion Mastery.
 
 ## Machining Learning
-For our project, we practiced using various machine learning models to test which would be the best fit. After loading in our dataset and preprocessing by removing unnecessary columns, we are able to begin with several different models. 
+For our project, we practiced using various machine learning models to test which would be the best fit. We started with loading in our data from the championPoints.csv.
+
+We then dropped null values and championID, total_championpoints, and summonersplaying from the dataframe.  We converted number values to integers and assigned 'difficulty' as the x-variable. 
 
 ### Logistic Regression
-With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current dummy model showed: 
+With logistic regression, we split our dataset into test and training, then scale the data before training and evaluating our model. Our current model shows: 
 
-Logistic regression model accuracy: 0.400
+ Logistic regression model accuracy: 0.372
+
 ### Basic Neural Network
 Similar to a logistic regression, a basic neural network can predict a dependent output variable from independent input variables. After defining the basic neural network model, we compile, train, and evaluate using test data. Our current dummy model showed an accuracy rate less than our logistic regression model:
 
-Loss: -737.0263671875, Accuracy: 0.31511253118515015
+ Basic neural network model accuracy: 0.014
+
 ### Deep Learning Model
-With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. Once we have our dataset, we'll be able to fully test this out. 
+With a deep learning model, we would be using more than one layer with the hopes of increasing the accuracy. 
+
+ SVM deep learning model accuracy: 0.050
 
 ### Random Forest
 If our dataset has a sufficient number of datapoints, then a random forest model would be a good contender as they are able to perform at a similar capacity as deep learning models, and sometimes faster. However, we need to keep in mind that if our data has high variability, the deep learning model may be able to detect that better. It could be a possibility that we'll need to conduct both tests.
+
+ Random forest predictive model accuracy: 1.000
+ 
+### Conclusion
+The Random Forest is the best model to use because it had the highest accuracy score of 1.00. The other models all had an accuracy score below 0.372. 
+
+## Presentation
+Here is the Google Slides version of our [presentation](https://docs.google.com/presentation/d/1F-JlsLppbihsJczyLr8Sn_S8Bs4aVmP5UtRGdgwIj4I/edit?usp=sharing).
