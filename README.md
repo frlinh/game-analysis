@@ -1,5 +1,5 @@
 # game-analysis
-Welcome everyone! Our team name is CHAMPIONS and our topic today is one of the most Popular online games today: the League of Legends. 
+Welcome everyone! Our team name is CHAMPIONS and our topic today is one of the most Popular online games in the world: League of Legends. 
 Why did we pick this game? League of Legends is one of the most popular PC games in the world with a massive global playerbase and over 8 million players a day; we picked this game due to the sheer popularity and longetivy of the platform. This game has been around for a decade plus and is still proving to be highly succesful, while also getting multiple developer updates regularly.
 
 League of legends is what is known in the gaming community as a MOBA. What is MOBA? MOBA stands for Multiplayer Online Battle Arena.
