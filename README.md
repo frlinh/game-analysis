@@ -5,7 +5,7 @@ Why did we pick this game? League of Legends is one of the most popular PC games
 League of legends is what is known in the gaming community as a MOBA. What is MOBA? MOBA stands for Multiplayer Online Battle Arena.
 The purpose of the game is to use your champion character and team up with four other champions (for a total of five) to face other teams of champions and destroy their base. Kinda like basketball, but with demons and assassins.
 
-THe first thing you must do to start this game is to choose your champion. With over 150 champions to choose from due to its ever-expanding roster of playable Champions, this is not always easy. League of Legends has developed a reputation of having a high barrier to entry. Not every champion is built the same and with a gang of powers and skills. Once you have selected your champion, you must select one of five roles, TOP, Jungler, MID, ADC and support. We will not get into each role but know that each champion is built to fit into certains roles better than others. 
+THe first thing you must do to start this game is to choose your champion. With over 150  to choose from due to its ever-expanding roster of playable Champions, this is not always easy. League of Legends has developed a reputation of having a high barrier to entry. Not every champion is built the same and each of them have a unique gang of powers and skills. Once you have selected your champion, you must select one of five roles, TOP, Jungler, MID, ADC and support. We will not get into each role but know that each champion is built to fit into certains roles better than others. 
 
 Our analysis is built to distinguish the Champions recommended for entry level players and the champions for those who like to take the road less traveled.
 
