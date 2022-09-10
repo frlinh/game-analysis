@@ -1,0 +1,10 @@
+body {
+    color: #141414;
+}
+
+.jumbotron {
+    background-image: url("/Users/adriennezane/Desktop/Data Bootcamp/game-analysis/League/Runeterra_Map_old.WebP Image");
+    background-color: black;
+    background-size: 100% 100%;
+    text-align: center;
+}
