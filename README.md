@@ -51,7 +51,6 @@ Anybody using this dashboard will be able to use this information to help make c
 
 - **Data Visualization:** JavaScript, Plotly, CSS, Flask, Tableau, HTML
 
-
 ### Communication Protocols:
 
 **Team Players:** Linh Ha, Stella Kim, Becky Nguyen, Kevin Zhang, Peter Villalpando
@@ -133,7 +132,7 @@ Our final try was with a random forest model. Upon our first try, the accuracy s
 
 <img width="655" alt="Screen Shot 2022-09-12 at 1 34 50 AM" src="https://user-images.githubusercontent.com/100896787/189538872-be8595b5-ff95-401e-89da-f3a2ed7be57b.png">
 
-We decided to evaluate this model further and discovered the 'crit' column contained zero values and the 'attackspeed' also contained zero because it was initially a decimal figure.  We dropped the 'crit' column altogether as it did not contain any valuable figures.  We added a lambda function to multiply 'attackspeed' by 10 before converting the datatype to an integer. By doing this, we were able to optimize and produce a Random Forest predictive score of 0.98.
+We decided to evaluate this model further and discovered the 'crit' column contained zero values and the 'attackspeed' also contained zero values because it was initially a decimal figure.  We dropped the 'crit' column altogether as it did not contain any valuable figures.  We added a lambda function to multiply 'attackspeed' by 10 before converting the datatype to an integer. By doing this, we were able to optimize and produce a Random Forest predictive score of 0.98.
 
 ## Conclusion & Results
 The Random Forest is the best model to use because it had the highest accuracy score whereas the other models all had an accuracy score below 0.372. 
